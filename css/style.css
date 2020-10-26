@@ -1,0 +1,29 @@
+/*commentaire*/
+div#content div.leftbox{
+	display: inline-block;
+}
+
+div#content div.rightbox{
+	display: inline-block;
+}
+
+body
+{
+	background-color: #F2F2F2;
+	margin:right;
+	width:100px;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav.menu-nav ul li.btn{
+	list-style-type:none;
+	display: inline-block;
+
+}
+
+nav.menu-nav ul li.btn a{
+	color: #0065fc;
+	text-decoration: none;
+	padding: 10px;
+
+}
