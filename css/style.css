@@ -1,29 +1,102 @@
-/*commentaire*/
-div#content div.leftbox{
-	display: inline-block;
-}
-
-div#content div.rightbox{
-	display: inline-block;
-}
-
 body
 {
-	background-color: #F2F2F2;
 	margin:right;
-	width:100px;
 	font-family: 'Raleway', sans-serif;
 }
 
-nav.menu-nav ul li.btn{
-	list-style-type:none;
+.container{
+	position: relative;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+}
+
+nav.menu-nav ul li{
 	display: inline-block;
 
 }
 
-nav.menu-nav ul li.btn a{
-	color: #0065fc;
+.nav-link{
+
+	color: #00A5fc; 
+    text-decoration: none;
+    list-style-type:none;
+    padding: 2px;
+
+} 
+
+.nav-item>a:hover { 
+    color: green; 
+} 
+
+/*code to change background color*/ 
+.menu-nav>.active>a { 
+    background-color: #C0C0C0; 
+    color: red; 
+}
+.filters{
+	display: flex;
+	justify-content: space-start;
+}
+.filters ul li{
+	display: inline-block;
 	text-decoration: none;
-	padding: 10px;
+	list-style-type:none;
+}
+
+#hebergements{
+		border-radius:10px;
+		display: grid;
+grid-template-columns: 80px 100px 150px;
+grid-template-rows: 100px 200px;
+background: #F00;
+}
+
+.photos img{
+
+	border-radius:10px; /*bordure ronde*/
+	border: 50px solid #F2F2F2 /*bordure grise*/
+	padding: 5px;
+}
+.photos img:hover{
+	box-shadow: 0 0 20px 1px rgba(0, 140, 186, 0.5);
+}
+
+#marseille, #pop{
+				background-color: #F2F2F2;
+}
+#marseille img{
+		width: auto;
+		height: 50px;
+		grid-column: 1 / 4;
+
+
+}
+#pop img{
+		width: auto;
+		height: 100px;
+		grid-row: 1 / 4;
+		grid-column: 4 / 5;
+}
+#activites img{
+		width:auto;
+		height: 150px;
+}
+.text-block{
+	position: relative;
+	bottom: 20px;
+	background-color: white;
+	padding: 40px
+	width: auto;	
+}
+footer{
+	background-color: #F2F2F2;
+}
+footer ul{
+	list-style-type:none;
+	display: inline-block;
+	text-decoration: none;
 
 }
