@@ -8,44 +8,97 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!-- Haut de page -->
-	<header>
-		<img src="img/logo/Reservia.svg">
-	</header>
-	<nav class="menu-nav">
-		<ul>
-			<li class="btn">
-				<a href="#">	
-					Hébergements
-				</a>
-			</li>
-			<li class="btn">
-				<a href="activites.html">
-					Activités
-				</a></li>
-			<li class="btn">
-				<a href="inscrire.html">
-					S'inscrire
-				</a>
-			</li>
-		</ul>
-	</nav>
-	<!-- Contenus sous forme de boite -->
-	<div id="content">
-		<div id="leftbox">
-			<p>
-				hello
-			</p>
-		</div>
-		<div id="rightbox">
-			<p>
-				man
-			</p>
-		</div>
-	</div>
+	<div class="container">
+		<!-- Haut de page menu-->
+		<header>
+			<img src="img/logo/Reservia.svg">
+			<nav class="menu-nav">
+				<ul>
+					<li class="nav-item active">	
+						<a class="nav-link" href="#">Hébergements</a>	
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+						Activités</a>					
+					<li class="nav-item">
+						<a class="nav-link" href="#">	S'inscrire</a>
+				</ul>
+			</nav>
+		</header>
+		<!-- section recherche -->
+		<section class="search">
+			<div>
+				<h3>
+					Trouvez votre hébergement pour des vacances de rêve
+				</h3>
+				<p class="subtile">En plein centre ville ou en pleine nature
+				</p>
+			</div>
+			<form class="form-Search">
+				<div class="form-group">
+					[icone][text][bouton]
+				</div>
+			</form>
+		</section>
+		<!-- section filtre-->
+		<section class="filters">
+			<h3>Filtres</h3>		
+			<ul>
+				<li class="btn">
+					<li>Economique</li>
+				</li>
+				<li class="btn">	
+					<li>Familial</li>
+				</li>
+				<li class="btn">
+					<li>Romantique</li>
+				<li class="btn">
+					<li>Animaux autorisés</li>
+				</li> 
+			</ul>	
+		</section>
+		<!-- section images -->		
+		<section class="photos">
+			<section id="hebergements">
+				<div id="marseille">
+					<h1>Hébergements à Marseille</h1>
+					<img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hebergements">
+					<div class="text-block">
+						<h5>Auberge la Cannebière</h5>
+						<h6>Nuit à partir de 25€</h6>
+					</div>
+					<img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements">
+				</div>
+				<div id='pop'>
+					<h1>Les plus populaires</h1>
+					<img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements">
+				</div>
+			</section>
+			<section id="activites">
+				<h1>Activités à Marseille</h1>
+				<img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="hebergements">
+				<div class="text-block">
+					<h5>Vieux Port</h5>
+				</div>
+			</section>
+		</section>
 	<!-- Pied de page -->
 	<footer>
-		
+		<ul>
+			<h5>propos</h5>
+			<li>Fonctionnement du site</li>
+			<li>Conditions générales de vente</li>
+			<li>Données de confidentialité</li>
+		</ul>
+		<ul>
+			<h5>Nos hébergements</h5>
+			<li>Charte de qualité</li>
+			<li>Soumettre votre hotel</li>
+		</ul>
+		<ul>
+			<h5>Assistance</h5>			
+			<li>Centre d'aide</li>
+			<li>Nous contacter</li>
+		</ul>
 	</footer>
 </body>
 </html>
