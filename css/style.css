@@ -1,7 +1,3 @@
-*{
-
-}
-
 body
 {
 	margin: 0 auto;
@@ -25,10 +21,9 @@ header{
 	justify-content: space-between;
 	width: 100%;
 	height: 50px;
-	position: relative;													
+												
 	top: 0;
 	align-items: center;
-
 	background-color: white;
 }
 
@@ -46,13 +41,13 @@ nav a{
 }
 
 nav a:hover{
-	color: #00A5FC;
-	border-top: 2px solid #00A5fc;
+	color: #0065FC;
+	border-top: 2px solid #0065fc;
 	padding:  40px 0;
 }
 
 #nav-link {
-	color: #00A5fc;
+	color: #0065fc;
 }
 
 .subtile{
@@ -75,9 +70,9 @@ nav a:hover{
 
 .photos img{
 	border-radius:10px; /*bordure ronde*/
-	border: 5px solid #FFF /*bordure grise*/
-	width:auto;
-	height:130px;
+	border: 15px solid #FFF /*bordure grise*/
+	width:0;
+	height:120px;
 
 }
 
@@ -88,9 +83,10 @@ nav a:hover{
 .hebergements{
 	border-radius:10px;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	background-color: #F2F2F2;
-
+	padding: 20px;
+	width: 70%;
 }
 
 #hebergements-grid1{
@@ -118,17 +114,16 @@ nav a:hover{
 	grid-column: 3/3;
 	grid-row:  2/2;
 }
-/*.pop{
+.pop{
 	position: absolute;
 	border-radius:10px;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: repeat(3, 250px);
 	background-color: #F2F2F2;
-}*/
+}
+/*
 
-
-/*#activites{
+#activites{
 	grid-column: 1 / 4;
 }
 #activites img{
