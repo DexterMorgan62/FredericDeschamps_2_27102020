@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Reservia</title>
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -12,16 +12,18 @@
 	<div class="container">
 		<!-- Haut de page menu-->
 		<header>
-			<img id="logo"src="img/logo/Reservia.svg">
+			<img id="logo" href="index.html" src="img/logo/Reservia.svg">
 			<nav>
+				<ul>
 					<li><a href="#">Hébergements</a></li>
 					<li><a href="#">Activités</a></li>
 					<li><a id="nav-link" href="#">S'inscrire</a></li>
+				</ul>
 			</nav>
 		</header>
 		<!-- section recherche -->
 		<section class="search">
-			<div>
+			<div class="hero">
 				<h3>Trouvez votre hébergement pour des vacances de rêve</h3>
 				<p class="subtile">En plein centre ville ou en pleine nature</p>
 			</div>
@@ -54,66 +56,59 @@
 
 		</section>
 
-		<!-- section photos -->		
-		<section class="photos">
-			<section>
-				<!-- section hébergements et plus populaires -->
-				<h1>Hébergements à Marseille</h1>
-				<div class="hebergements">
+		<!-- section  -->		
+		<section class="Marseille">
+			<!-- section hébergements  plus populaires activotes -->
+			<h1>Hébergements à Marseille</h1>
+			<div class="hebergements">
+				<div class="vignettes">
+					<img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"; alt="hebergements">
+<!-- 						<div class="text-block">
+							<h5>Auberge la Cannebière</h5>
+							<h6>Nuit à partir de 25€</h6>
+						</div> -->
 
-					<a id="hebergements-grid1">
-					<img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"; alt="hebergements">
-<!-- 						<div class="text-block">
-							<h5>Auberge la Cannebière</h5>
-							<h6>Nuit à partir de 25€</h6>
-						</div> -->
-					</a>
-					<a id="hebergements-grid2">
 					<img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements">
-					</a>
-					<a id="hebergements-grid3">
+
 					<img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"; alt="hebergements">
 <!-- 						<div class="text-block">
 							<h5>Auberge la Cannebière</h5>
 							<h6>Nuit à partir de 25€</h6>
 						</div> -->
-					</a>
-					<a id="hebergements-grid4">
+
 					<img src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hebergements">
-					</a>
-					<a id="hebergements-grid5">
+
 					<img src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"; alt="hebergements">
 <!-- 						<div class="text-block">
 							<h5>Auberge la Cannebière</h5>
 							<h6>Nuit à partir de 25€</h6>
 						</div> -->
-					</a>
-					<a id="hebergements-grid6">
+
 					<img src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hebergements">
-					</a>
+
 				</div>
-<!-- 					<h1>Les plus populaires</h1>
+				</div>
+				<h1>Les plus populaires</h1>
 				<div class='pop'>
-					<a id="pop-grid1">
-					<img class="photo-grid3" src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements">
-				</a>
-					<a id="pop-grid1">
-					<img class="photo-grid3" src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements">
-				</a>
-					<a id="pop-grid1">
-					<img class="photo-grid3" src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements">
-				</a>
+					<div class="vignettes">
+						<img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements">
+
+						<img  src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements">
+
+						<img  src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements">
+					</div>
 				</div>
-			</section>
-			<section id="activites">
-				<h1>Activités à Marseille</h1>
-				<img class="photo-grid4 hebergements" src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="hebergements">
-				<div class="text-block">
-					<h5>Vieux Port</h5>
+				<div class="activites">
+					<div class="vignettes">
+						<h1>Activités à Marseille</h1>
+						<img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="hebergements">
+						<div class="text-block">
+							<h5>Vieux Port</h5>
+						</div>
+					</div>
 				</div>
-			</section>
 		</section>
-	</div>	 -->
+	</div>	
 	<!-- Pied de page -->
 	<footer>
 		<ul>
