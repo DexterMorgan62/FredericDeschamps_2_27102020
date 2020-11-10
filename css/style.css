@@ -61,9 +61,10 @@ nav a:hover{
 
 }
 
-i {
+.form-group i {
 	background-color: #F2F2F2;
 	padding: 10px;
+	border-radius: 10px 0px 0px 10px;
 }
 input{
 	padding: 8px;
@@ -85,15 +86,32 @@ input{
 
 .section-filters{
 	grid-area: filters;
+}
+
+.filters i{
+  background-color: rgba(0, 101, 252, 0.2);
+  color:#0065FC;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+
+
+}
+.button-filter{
+    background-color: #fff;
+	border-radius: 60px 60px 60px 60px;
+	border-color: rgba(242, 242, 242, 1);
+	border-width: 1px;
+    font-weight: 700;
+	padding: 6px;
+
 
 }
 
 .filters{
 	display: flex;
-	font-weight: 600;
-}
-.button-filter{
-	
+	font-weight: 800;
+
 }
 
 .info{
@@ -106,11 +124,9 @@ input{
 
 .box-hebergements-populaires{
 	display: grid;
-	width: 1200px;
-	grid-template-columns: 900px 500px;
-	grid-template-rows: 500px;
+	grid-template-columns: 70% 25%;
 	border-radius:10px;
-	grid-gap: 3em;
+	grid-gap: 2em;
 	margin-left: 35px;
 
 }
@@ -121,10 +137,8 @@ input{
 
 .box-hebergements img {
 	border-radius:10px 10px;
-	width: 80%;
-	height: 160px;
+	width: 60%;
 	box-shadow: 0 0 20px 1px rgba(160, 160, 160, 1);
-	justify-content: space-between;
 
 }
 
@@ -133,18 +147,25 @@ input{
 	grid-template-columns:  repeat(3, 1fr);
 	background-color: #F2F2F2;
 	grid-gap: 1em;
-	justify-content: center;
-	align-content: center;
+	padding: 10px;
+
 }
 
 .vignettes-hebergements {
 	border-radius:10px;
+	justify-content: center;
+	align-content: center;
+
 }
 
 
 .box-populaires img {
 	border-radius:10px;
-	width: 50%;
+	width: 70%;
+	height: 60%;
+
+justify-content: space-around;
+align-items: center;
 	
 	box-shadow: 0 0 20px 1px rgba(160, 160, 160, 1);
 
@@ -155,37 +176,36 @@ input{
 }
 .box-populaires{
 	display: flex;
-	width: 400px;
-	height: 500px; 
+	width: 100%;
 	flex-direction: column;
 	border-radius:10px;
 	background-color: #F2F2F2;
 
+
 }
 .vignettes-populaires{
 	border-radius:10px;
-
-
+	padding: 20px;
 }
 .box-activites img {
 	border-radius:10px;
-	width: 60%;
-	height: 130px;
+	width: 70%;
 	box-shadow: 0 0 20px 1px rgba(160, 160, 160, 1);
+
+	align-content: : center;
 
 }
 .box-activites{
   	display: flex;
-  	height:300px;
-	background-color: #F2F2F2;
+  	width: 100%;
 	justify-content: space-between;
 	border-radius:10px;
-	align-content: : center;
-	margin: 36px
+	padding: 40px;
 
 }
 .vignettes-activites{
 		border-radius:10px;
+		padding: 20px;
 }
 footer{
 	grid-area: footer;
