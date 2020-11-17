@@ -131,11 +131,12 @@ right: 5px;
 /*hebergement et populaires*/
 .box-hebergements-populaires{
 	display: grid;
-	grid-template-columns: 70% 25%;
+	width: 100%;
+	grid-template-columns: 880px 360px;
 	grid-template-areas:"hebergements populaires"
 					 	"activites activites";
-	justify-content:  space-between;
-	grid-gap: 0px;
+	justify-content:  space-around;
+	grid-gap: 20px;
 }
 .box-title-hebergements h3{
 	margin-left:30px ;
@@ -160,6 +161,7 @@ grid-gap: 10px;
 
 }
 .box-hebergements img {
+	object-fit: cover;
 	border-radius:20px;
 	padding:5px; 
 	width: 240px;
@@ -188,8 +190,6 @@ grid-gap: 10px;
 	grid-gap:30px;
 	flex-wrap: wrap;
 	align-content: center;
-
-
 }
 .box-title-populaires h3{
 	margin-left: 10px;
@@ -198,82 +198,83 @@ grid-gap: 10px;
 	padding-left: 100px;
 }
 .box-populaires img {
+	object-fit: cover;
 	border-radius:20px;
 	width: 300px;
 	height: 140px;
 	box-shadow: 0 0 20px 1px rgba(160, 160, 160, 1);
 	padding:5px;
-
 }
 
 /*activites*/
 
 .box-title-activites{
+	display: grid;
 	border-radius:20px;
-	padding: 20px;
-	width: 100%;
-
-}
-.box-activites{
-  	display: grid;
-  	background-color: red;
+	width:100%;
+  	
 	grid-area:activites;
-  	width: 100%;
-  	grid-template-columns: repeat(4, 1fr);
-  	grid-template-rows: 150px 40px 150px;
-	border-radius:10px;
-
-	grid-gap: 15px
-	align-items: center;
+	grid-template-columns: repeat(4, 1fr); 
+  	grid-template-rows: 50px 150px 40px 150px;
+  	justify-content: space-around;
 }
-.box-activites img {
+.box-title-activites img {
 	border-radius:20px;
-	width: 100%;
-	height: 100%;
+	width: 240px;
+	height:100%;
 	object-fit: cover;
 	box-shadow: 0 0 20px 1px rgba(160, 160, 160, 1);
+}
+.title-box-title-activites {
+  grid-column-start: 1; 
+  grid-column-end: 1; 
+  grid-row-start: 1; 
+  grid-row-end: 1; 
 }
 .vignettes-activites-vieuxport { 
   grid-column-start: 1; 
   grid-column-end: 1; 
-  grid-row-start: 1; 
-  grid-row-end: 4; 
+  grid-row-start: 2; 
+  grid-row-end: 5; 
 } 
 .vignettes-activites-fortdepormegues { 
   grid-column-start: 2; 
   grid-column-end: 2; 
-  grid-row-start: 1; 
-  grid-row-end: 3; 
+  grid-row-start: 2; 
+  grid-row-end: 4; 
 }
 .vignettes-activites-ilesdesfrioul { 
   grid-column-start: 2; 
   grid-column-end: 2; 
-  grid-row-start: 3; 
-  grid-row-end: 3; 
+  grid-row-start: 4; 
+  grid-row-end: 5; 
 } 
 .vignettes-activites-parcnationaldescalanques { 
   grid-column-start: 3; 
   grid-column-end: 3; 
-  grid-row-start: 1; 
-  grid-row-end: 4; 
+  grid-row-start: 2; 
+  grid-row-end: 5; 
 }
 .vignettes-activites-notredamedelagarde { 
   grid-column-start: 4; 
   grid-column-end: 4; 
-  grid-row-start: 1; 
+  grid-row-start: 2; 
   grid-row-end: 3; 
 } 
 .vignettes-activites-parclongchamp { 
   grid-column-start: 4; 
   grid-column-end: 4; 
   grid-row-start: 3; 
-  grid-row-end: 3; 
+  grid-row-end: 5; 
 }
 footer{
 	grid-area: footer;
+	display: flex;
 	background-color: #F2F2F2;
 	width: 100%;
 	bottom: 0;
+	text-align: left;
+	grid-gap: 250px;
 }
 footer ul{
 	list-style:none;
