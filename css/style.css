@@ -135,7 +135,7 @@ right: 5px;
 	grid-template-columns: 880px 360px;
 	grid-template-areas:"hebergements populaires"
 					 	"activites activites";
-	justify-content:  space-around;
+	justify-content:  space-between;
 	grid-gap: 20px;
 }
 .box-title-hebergements h3{
@@ -210,13 +210,10 @@ grid-gap: 10px;
 
 .box-title-activites{
 	display: grid;
-	border-radius:20px;
 	width:100%;
-  	
 	grid-area:activites;
 	grid-template-columns: repeat(4, 1fr); 
   	grid-template-rows: 50px 150px 40px 150px;
-  	justify-content: space-around;
 }
 .box-title-activites img {
 	border-radius:20px;
