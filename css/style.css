@@ -29,13 +29,12 @@ p{
 }
 header{
 	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	height: 50px;									
+	position: sticky;
+	justify-content: space-between;									
 	top: 0;
-	align-items: center;
+	padding:1rem 3rem;
 	background-color: white;
-
+	z-index: 9;
 }
 /*menu de navigation*/ 
 nav li{
@@ -44,12 +43,12 @@ nav li{
 
 }
 nav {
-	border-top: 2px solid transparent;
+
 }
 nav a:hover{
 	color: #0065FC;
 	border-top: 2px solid #0065fc;
-	padding:  55px 0;
+	padding:  28px 0;
 }
 #nav-link {
 	color: #0065fc;
@@ -131,40 +130,31 @@ right: 5px;
 /*hebergement et populaires*/
 .box-hebergements-populaires{
 	display: grid;
-	width: 100%;
-	grid-template-columns: 880px 360px;
-	grid-template-areas:"hebergements populaires"
-					 	"activites activites";
-	justify-content:  space-between;
-	grid-gap: 20px;
+	grid-template-columns: 7fr 3fr;
+	grid-column-gap: 20px;
 }
-.box-title-hebergements h3{
-	margin-left:30px ;
-}
+
 /*hebergements*/
 .box-title-hebergements{
 	background-color: #F2F2F2;
 	border-radius:20px;
 	padding: 20px;
-	width: 100%;
-grid-gap: 10px;
+}
+.box-title-hebergements h3{
+	margin-left: 20px;
 }
 
-
 .box-hebergements{
-	display: flex;
-	grid-area:hebergements;
-	width: 100%;
-	flex-wrap: wrap;
-	grid-row-gap:40px;
-	justify-content: space-around;
-
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	grid-row-gap: 30px;
 }
 .box-hebergements img {
 	object-fit: cover;
 	border-radius:20px;
 	padding:5px; 
-	width: 240px;
+	width: 250px;
 	height:200px;
 	box-shadow: 0 0 20px 1px rgba(160, 160, 160, 1);
 }
@@ -179,20 +169,16 @@ grid-gap: 10px;
 	background-color: #F2F2F2;
 	border-radius:20px;
 	padding: 20px;
-	width: 100%;
 }
 
 .box-populaires{
 	display: flex;
-	grid-area: populaires;
-	width: 100%;
 	flex-direction: column;
 	grid-gap:30px;
-	flex-wrap: wrap;
-	align-content: center;
+	align-items: center;
 }
 .box-title-populaires h3{
-	margin-left: 10px;
+	text-align: center;
 }
 .box-title-populaires h3 i{
 	padding-left: 100px;
@@ -207,38 +193,33 @@ grid-gap: 10px;
 }
 
 /*activites*/
-
 .box-title-activites{
-	display: grid;
-	width:100%;
-	grid-area:activites;
-	grid-template-columns: repeat(4, 1fr); 
-  	grid-template-rows: 50px 150px 40px 150px;
+	padding-top: 20px;
 }
-.box-title-activites img {
+.box-activites{
+	display: grid;
+	grid-template-rows: 190px 40px 40px 170px;
+	justify-content: space-between;
+
+}
+.box-activites img {
 	border-radius:20px;
 	width: 240px;
-	height:100%;
+	height: 100%;
 	object-fit: cover;
 	box-shadow: 0 0 20px 1px rgba(160, 160, 160, 1);
-}
-.title-box-title-activites {
-  grid-column-start: 1; 
-  grid-column-end: 1; 
-  grid-row-start: 1; 
-  grid-row-end: 1; 
 }
 .vignettes-activites-vieuxport { 
   grid-column-start: 1; 
   grid-column-end: 1; 
-  grid-row-start: 2; 
-  grid-row-end: 5; 
+  grid-row-start: 1; 
+  grid-row-end: 5;
 } 
 .vignettes-activites-fortdepormegues { 
   grid-column-start: 2; 
   grid-column-end: 2; 
-  grid-row-start: 2; 
-  grid-row-end: 4; 
+  grid-row-start: 1; 
+  grid-row-end: 3; 
 }
 .vignettes-activites-ilesdesfrioul { 
   grid-column-start: 2; 
@@ -249,14 +230,14 @@ grid-gap: 10px;
 .vignettes-activites-parcnationaldescalanques { 
   grid-column-start: 3; 
   grid-column-end: 3; 
-  grid-row-start: 2; 
+  grid-row-start: 1; 
   grid-row-end: 5; 
 }
 .vignettes-activites-notredamedelagarde { 
   grid-column-start: 4; 
   grid-column-end: 4; 
-  grid-row-start: 2; 
-  grid-row-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 2; 
 } 
 .vignettes-activites-parclongchamp { 
   grid-column-start: 4; 
