@@ -35,6 +35,7 @@ header{
 	padding:1rem 3rem;
 	background-color: white;
 	z-index: 9;
+	flex-wrap: wrap;
 }
 /*menu de navigation*/ 
 nav li{
@@ -132,7 +133,10 @@ right: 5px;
 	display: grid;
 	grid-template-columns: 7fr 3fr;
 	grid-column-gap: 20px;
+	width: 100%;
+
 }
+
 
 /*hebergements*/
 .box-title-hebergements{
@@ -148,15 +152,29 @@ right: 5px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	justify-items: center;
-	grid-row-gap: 30px;
+	grid-row-gap:100px;
 }
 .box-hebergements img {
 	object-fit: cover;
 	border-radius:20px;
+	background-color: white;
 	padding:5px; 
 	width: 250px;
-	height:200px;
+	height:135px;
 	box-shadow: 0 0 20px 1px rgba(160, 160, 160, 1);
+
+}
+/* Bottom right text */
+.box-hebergements .text-block {
+	position: absolute;
+	bottom: 10px;
+	text-align: left;
+	padding-left:20px; 
+	width: 240px;
+	border-radius: 0px 0px 20px 20px; 
+	background-color: white;
+  	color: black;
+
 }
 .end-block{
 	padding: 30px;
@@ -169,10 +187,12 @@ right: 5px;
 	background-color: #F2F2F2;
 	border-radius:20px;
 	padding: 20px;
+
 }
 
 .box-populaires{
 	display: flex;
+	width: 100%;
 	flex-direction: column;
 	grid-gap:30px;
 	align-items: center;
@@ -198,6 +218,7 @@ right: 5px;
 }
 .box-activites{
 	display: grid;
+	width: 100%;
 	grid-template-rows: 190px 40px 40px 170px;
 	justify-content: space-between;
 
@@ -246,7 +267,6 @@ right: 5px;
   grid-row-end: 5; 
 }
 footer{
-	grid-area: footer;
 	display: flex;
 	background-color: #F2F2F2;
 	width: 100%;
@@ -259,16 +279,27 @@ footer ul{
 	display: inline-block;
 	text-decoration: none;
 }
-@media screen and (max-width: 500px)
+@media screen and (max-width: 600px)
 {
-	.box-hebergements-populaires{
-		grid-template-columns: 1fr;
-		grid-template-rows: 0.5fr 0.2fr 0.2fr 0.2fr 0.5fr 0.2fr;
-		grid-template-areas:"menu"
-							"search"
-							"filters"
-							"hebergements"
-							"populaires"
-							"footer";
+	 .box-hebergements-populaires,.box-title-hebergements, .box-title-populaires, .box-hebergements, .box-activites{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	
+	}
+	nav li{
+		display: inline;
+
+
+	}
+
+	.vignettes-hebergements img, .vignettes-populaires img, .vignettes-activites img{
+	width: 100%;
+
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+		grid-gap: 0px;
 	}
 }
