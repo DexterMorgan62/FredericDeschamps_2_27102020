@@ -63,8 +63,9 @@ nav a:hover{
 }
 .form-group i {
 	background-color: #F2F2F2;
-	padding: 10px;
+	padding: 15px;
 	border-radius: 10px 0px 0px 10px;
+
 }
 input{
 	padding: 8px;
@@ -72,18 +73,16 @@ input{
 	border-style: ridge none;
 	border-width: 1px;
 	border-color: #F2F2F2;
+	font-weight: 800;
+	font-size: medium;
 }
 .button-find{
 	border-radius: 0px 10px 10px 0px;
 	border: 0;
-		width: 125PX;
+	width: 125PX;
 	background-color: #0065FC;
 	color: white;
 	font-weight: 700;
-	font-size: medium;
-}
-::placeholder, .rechercher{
-	font-weight: 800;
 	font-size: medium;
 }
 
@@ -94,15 +93,16 @@ input{
 	width: 100%;
 	align-items:  center;
 	flex-wrap: wrap;
+	margin-left: 10px;
 }
 
 .filters i{
-  background-color: #deebff;
-  color:#0065FC;
-  border-radius:30px;
-  padding: 15px 15px 15px 15px;
-position: relative;
-right: 5px;
+	background-color: #deebff;
+	color:#0065FC;
+	border-radius:30px;
+	padding: 15px 15px 15px 15px;
+	position: relative;
+	right: 5px;
 }
 
 .button-filter{
@@ -123,8 +123,9 @@ right: 5px;
 
 .info{
 	padding: 20px 0px 20px 0px;
+	margin-left: 10px;
 }
-.fa {
+.fa-info-circle{
 	color: #0065FC;
 }
 
@@ -143,9 +144,11 @@ right: 5px;
 	background-color: #F2F2F2;
 	border-radius:20px;
 	padding: 20px;
+	position: relative;
 }
 .box-title-hebergements h3{
 	margin-left: 20px;
+
 }
 
 .box-hebergements{
@@ -153,32 +156,63 @@ right: 5px;
 	grid-template-columns: repeat(3, 1fr);
 	justify-items: center;
 	grid-row-gap:100px;
-}
-.box-hebergements img {
-	object-fit: cover;
-	border-radius:20px;
-	background-color: white;
-	padding:5px; 
-	width: 250px;
-	height:135px;
-	box-shadow: 0 0 20px 1px rgba(160, 160, 160, 1);
 
 }
-/* Bottom right text */
-.box-hebergements .text-block {
+.box-hebergements img {
+	
+	position: relative;
+	object-fit: cover;
+	object-position: center;
+	border-radius:20px 20px 0px 0px;
+	background-color: white;
+	padding: 5px 5px 0px 5px; 
+	width: 250px;
+	height:120px;
+	box-shadow: 0 0 20px 1px rgba(160, 160, 160, 1);
+	bottom: -5px;
+}
+
+
+/* Details des images hebergements */
+
+.block-hebergements-details {
 	position: absolute;
-	bottom: 10px;
+	line-height: 5px;
 	text-align: left;
 	padding-left:20px; 
 	width: 240px;
+	height:80px;
 	border-radius: 0px 0px 20px 20px; 
 	background-color: white;
   	color: black;
+}
+.hebergements-name {
 
+	font-weight: 800;
+	font-size: 16px;
+}
+.hebergements-prix{
+	font-size: smaller;
+	font-weight: 500;
+}
+.blue{
+	color: #0065FC
+}
+.grey{
+	color: silver;
+}
+.hebergements-star-rating{
+	line-height: 5px;
+	letter-spacing: -10px;	
+	text-align: left;
+	font-size: small;
 }
 .end-block{
-	padding: 30px;
+	position: absolute;
+	bottom:  40px;
+	margin-left:  20px;
 	font-weight: 800;
+
 }
 
 /*populaires*/
@@ -186,7 +220,6 @@ right: 5px;
 .box-title-populaires{
 	background-color: #F2F2F2;
 	border-radius:20px;
-	padding: 20px;
 
 }
 
@@ -194,24 +227,70 @@ right: 5px;
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-	grid-gap:30px;
 	align-items: center;
+
 }
 .box-title-populaires h3{
 	text-align: center;
+	
+
 }
 .box-title-populaires h3 i{
 	padding-left: 100px;
 }
 .box-populaires img {
 	object-fit: cover;
-	border-radius:20px;
-	width: 300px;
-	height: 140px;
-	box-shadow: 0 0 20px 1px rgba(160, 160, 160, 1);
-	padding:5px;
+	border-radius: 20px 0px 0px 20px;
+	background-color: white;
+	width: 120px;
+	height: 135px;
+	padding:5px 0px 5px 5px;
+
+	
 }
 
+/* Details des images populaires */
+
+.vignettes-populaires {
+    overflow: hidden; /* empêche le dépassement des flottants */
+    padding-left: 120px; /* Largeur de l'image + gouttière */
+
+}
+.vignettes-populaires-gauche{
+    float: left;
+
+    margin-left: -120px;
+
+}
+.block-populaires-details {
+
+	line-height: 15px;
+	text-align: left; 
+	width: 190px;
+	height:145px;
+	border-radius: 0px 20px 20px 0px; 
+	background-color: white;
+  	color: black;
+
+}
+.populaires-name {
+	padding-top: 10px;
+	font-weight: 800;
+	font-size: 16px;
+	margin-left: 20px;
+}
+.populaires-prix{
+	font-size: smaller;
+	font-weight: 500;
+	margin-left: 20px;
+}
+.populaires-star-rating{
+	line-height: 70px;
+	letter-spacing: -10px;	
+	text-align: left;
+	font-size: small;
+	margin-left: 20px;
+}
 /*activites*/
 .box-title-activites{
 	padding-top: 20px;
@@ -224,11 +303,26 @@ right: 5px;
 
 }
 .box-activites img {
-	border-radius:20px;
+	position: relative;
+	border-radius:20px 20px 0px 0px;
 	width: 240px;
 	height: 100%;
 	object-fit: cover;
 	box-shadow: 0 0 20px 1px rgba(160, 160, 160, 1);
+}
+.block-activites-details {
+	position: absolute;
+	text-align: left;
+	width: 240px;
+	height:80px;
+	border-radius: 0px 0px 20px 20px; 
+	background-color: white;
+  	color: black;
+}
+.activites-name {
+
+	font-weight: 800;
+	font-size: 16px;
 }
 .vignettes-activites-vieuxport { 
   grid-column-start: 1; 
@@ -294,7 +388,7 @@ footer ul{
 	}
 
 	.vignettes-hebergements img, .vignettes-populaires img, .vignettes-activites img{
-	width: 100%;
+
 
 	}
 	footer{
