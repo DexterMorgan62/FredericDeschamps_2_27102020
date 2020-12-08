@@ -19,8 +19,8 @@
 		</div>
 		<nav>
 			<ul>
-				<li><a href="#">Hébergements</a></li>
-				<li><a href="#">Activités</a></li>
+				<li><a href="#hebergements">Hébergements</a></li>
+				<li><a href="#activites">Activités</a></li>
 				<li><a id="nav-link" href="#">S'inscrire</a></li>
 			</ul>
 		</nav>
@@ -52,13 +52,12 @@
 					autorisés</button>
 			</div>
 			<div class="info">
-
 				<p><i class="fa fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville
 				</p>
 			</div>
 		</section>
 		<!-- section hébergements  plus populaires-->
-		<section class="box-hebergements-populaires">
+		<section class="box-hebergements-populaires" id="hebergements">
 			<!-- Section hebergements -->
 			<div class="box-title-hebergements">
 				<h2>Hébergements à Marseille</h2>
@@ -85,12 +84,10 @@
 							<i class="fas fa-star blue"></i>
 							<i class="fas fa-star blue"></i>
 							<i class="fas fa-star blue"></i>
-
 						</div>
 					</div>
 					<div class="vignettes-hebergements">
 						<img src="img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" ; alt="hebergements">
-
 						<p class="hebergements-name">Hôtel Les mouettes</p>
 						<p class="hebergements-prix">Nuit à partir de 76€</p>
 						<div class="hebergements-star-rating">
@@ -154,8 +151,10 @@
 						<img class="vignettes-populaires-gauche"
 							src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="populaires">
 						<div class="block-populaires-details">
-							<p class="populaires-name">Hôtel Le soleil du matin</p>
-							<p class="populaires-prix">Nuit à partir de <strong>128€</strong></p>
+							<div class="populaires-text">
+								<p class="populaires-name">Hôtel Le soleil du matin</p>
+								<p class="populaires-prix">Nuit à partir de <strong>128€</strong></p>
+							</div>
 							<div class="populaires-star-rating">
 								<i class="fas fa-star blue"></i>
 								<i class="fas fa-star blue"></i>
@@ -169,8 +168,10 @@
 						<img class="vignettes-populaires-gauche"
 							src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="populaires">
 						<div class="block-populaires-details">
-							<p class="populaires-name">Au coeur de l'eau Chambres d'hôtes</p>
-							<p class="populaires-prix">Nuit à partir de <strong>71€</strong></p>
+							<div class="populaires-text">
+								<p class="populaires-name">Au coeur de l'eau Chambres d'hôtes</p>
+								<p class="populaires-prix">Nuit à partir de <strong>71€</strong></p>
+							</div>
 							<div class="populaires-star-rating">
 								<i class="fas fa-star blue"></i>
 								<i class="fas fa-star blue"></i>
@@ -184,8 +185,10 @@
 						<img class="vignettes-populaires-gauche"
 							src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="populaires">
 						<div class="block-populaires-details">
-							<p class="populaires-name">Hôtel Tout bleu et Blanc</p>
-							<p class="populaires-prix">Nuit à partir de <strong>68€</strong></p>
+							<div class="populaires-text">
+								<p class="populaires-name">Hôtel Tout bleu et Blanc</p>
+								<p class="populaires-prix">Nuit à partir de <strong>68€</strong></p>
+							</div>
 							<div class="populaires-star-rating">
 								<i class="fas fa-star blue"></i>
 								<i class="fas fa-star blue"></i>
@@ -196,69 +199,64 @@
 						</div>
 					</div>
 				</div>
+			</div>
 		</section>
 		<!-- Section activites -->
-		<section class="box-title-activites">
+		<section class="box-title-activites" id="activites">
 			<h3>Activités à Marseille</h3>
 			<div class="box-activites">
 				<div class="vignettes-activites-vieuxport">
-					<img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activites">
-					<div class="block-activites-details">
-						<p class="activites-name">Vieux port</p>
-					</div>
+					<img class="image-activites" src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+						alt="activites">
+					<p class="activites-name">Vieux port</p>
 				</div>
-				<div class="vignettes-activites-fortdepormegues">
-					<img src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="activites">
-					<div class="block-activites-details">
-						<p class="activites-name">Fort de Pomègues</p>
-					</div>
+				<div class="vignettes-activites-fortdepomegues">
+					<img class="image-activites" src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+						alt="activites">
+					<p class="activites-name">Fort de Pomègues</p>
 				</div>
-				<div class="vignettes-activites-ilesdesfrioul">
-					<img src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="activites">
-					<div class="block-activites-details">
-						<p class="activites-name">Iles du Frioul</p>
-					</div>
+				<div class="vignettes-activites-ilesdufrioul">
+					<img class="image-activites" src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+						alt="activites">
+					<p class="activites-name">Iles du Frioul</p>
 				</div>
 				<div class="vignettes-activites-parcnationaldescalanques">
-					<img src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="activites">
-					<div class="block-activites-details">
-						<p class="activites-name">Parc National des Calanques</p>
-					</div>
+					<img class="image-activites" src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+						alt="activites">
+					<p class="activites-name">Parc National des Calanques</p>
 				</div>
 				<div class="vignettes-activites-notredamedelagarde">
-					<img src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="activites">
-					<div class="block-activites-details">
-						<p class="activites-name">Notre-Dame-de-la-Garde</p>
-					</div>
+					<img class="image-activites" src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+						alt="activites">
+					<p class="activites-name">Notre-Dame-de-la-Garde</p>
 				</div>
 				<div class="vignettes-activites-parclongchamp">
-					<img src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="activites">
-					<div class="block-activites-details">
-						<p class="activites-name">Parc longchamp</p>
-					</div>
+					<img class="image-activites" src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+						alt="activites">
+					<p class="activites-name">Parc longchamp</p>
 				</div>
 			</div>
 		</section>
-
-		<!-- Pied de page -->
-		<footer>
-			<ul>
-				<h5>A propos</h5>
-				<li><a href="#">Fonctionnement du site</a></li>
-				<li><a href="#">Conditions générales de vente</a></li>
-				<li><a href="#">Données de confidentialité</a></li>
-			</ul>
-			<ul>
-				<h5>Nos hébergements</h5>
-				<li><a href="#">Charte de qualité</a></li>
-				<li><a href="#">Soumettre votre hotel</a></li>
-			</ul>
-			<ul>
-				<h5>Assistance</h5>
-				<li><a href="#">Centre d'aide</a></li>
-				<li><a href="#">Nous contacter</a></li>
-			</ul>
-		</footer>
+	</div>
+	<!-- Pied de page -->
+	<footer>
+		<ul>
+			<h5>A propos</h5>
+			<li><a href="#">Fonctionnement du site</a></li>
+			<li><a href="#">Conditions générales de vente</a></li>
+			<li><a href="#">Données de confidentialité</a></li>
+		</ul>
+		<ul>
+			<h5>Nos hébergements</h5>
+			<li><a href="#">Charte de qualité</a></li>
+			<li><a href="#">Soumettre votre hotel</a></li>
+		</ul>
+		<ul>
+			<h5>Assistance</h5>
+			<li><a href="#">Centre d'aide</a></li>
+			<li><a href="#">Nous contacter</a></li>
+		</ul>
+	</footer>
 </body>
 
 </html>
