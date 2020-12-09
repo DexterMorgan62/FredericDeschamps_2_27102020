@@ -252,23 +252,29 @@ input {
 .box-activites {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 35%d);
+  grid-template-rows: repeat(2, 35%);
   grid-gap: 30px;
 }
 .image-activites {
   width: 100%;
   height: 100%;
-  border-radius: 20px 20px 0px 0px;
+  transform-origin: 50% 65%;
+  transition: transform 5s, 3s ease-in-out;
 }
-
+.image-activites:hover {
+  transform: scale(3);
+}
 .activites-name {
   display: flex;
   flex-direction: column;
   font-weight: 800;
   font-size: 16px;
-  margin-left: 10px;
+
   text-align: start;
-  height: 10px;
+  width: 100%;
+  height: 40px;
+  z-index: 9;
+  background-color: rgb(240, 18, 18);
 }
 
 .vignettes-activites-vieuxport {
@@ -276,36 +282,36 @@ input {
   grid-row: 1/3;
   display: flex;
   flex-direction: column;
-  align-self: stretch;
-  background-color: rgb(240, 18, 18);
   border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  z-index: 0;
 }
 .vignettes-activites-fortdepomegues {
   grid-column: 2/3;
   grid-row: 1/2;
   display: flex;
   flex-direction: column;
-  align-self: stretch;
   background-color: rgb(240, 18, 18);
   border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
 }
 .vignettes-activites-ilesdufrioul {
   grid-column: 2/3;
   grid-row: 2/2;
-  display: flex;
   flex-direction: column;
   align-self: flex-end;
   background-color: rgb(240, 18, 18);
   border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
 }
 .vignettes-activites-parcnationaldescalanques {
   grid-column: 3/4;
   grid-row: 1/3;
   display: flex;
   flex-direction: column;
-  align-self: stretch;
   background-color: rgb(240, 18, 18);
   border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
 }
 .vignettes-activites-notredamedelagarde {
   grid-column: 4/5;
@@ -315,6 +321,7 @@ input {
   align-self: flex-start;
   background-color: rgb(240, 18, 18);
   border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
 }
 .vignettes-activites-parclongchamp {
   grid-column: 4/5;
@@ -324,6 +331,7 @@ input {
   align-self: flex-end;
   background-color: rgb(240, 18, 18);
   border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
 }
 footer {
   display: flex;
