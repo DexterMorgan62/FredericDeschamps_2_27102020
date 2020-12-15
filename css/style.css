@@ -65,7 +65,7 @@ nav a:hover {
 }
 input {
   padding: 8px;
-  width: 250px;
+  width: 200px;
   border-style: ridge none;
   border-width: 1px;
   border-color: #f2f2f2;
@@ -356,36 +356,34 @@ footer ul {
 @media (max-width: 425px) {
   header,
   .container,
+  .section-filters,
   .filters,
+  .section-search,
+  .search,
   .box-hebergements-populaires,
   .box-hebergements,
   .box-populaires,
-  .box-activites {
+  .vignettes-populaires,
+  .box-activites, 
+  footer{
     display: flex;
-    width: 100%;
-    padding: 0px;
     flex-direction: column;
     align-items: start;
-  }
+    text-align: start;
+    width: 100%;
+    padding: 0px;
+    margin:0;
+    grid-gap:5px;
+    height:auto;
 
-  .menu ul {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    align-self: left;
+
   }
-  .filters {
-  }
-  /* .menu ul .hebergements,
-  .menu ul .activites {
-    display: grid;
-    justify-content: space-between;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-  } */
+header .logo{
+  position: ;
 }
+
 /* Tablette de 426px à 767px de large */
-@media screen and (min-width: 426px) and (max-width: 767px) {
+@media (min-width: 426px) and (max-width: 767px) {
   .container {
   }
 }
