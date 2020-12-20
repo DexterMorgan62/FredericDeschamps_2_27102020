@@ -37,6 +37,7 @@ header {
   padding: 1rem 3rem;
   background-color: white;
   z-index: 9;
+  margin-bottom: 10px;
 }
 
 /*menu de navigation*/
@@ -49,10 +50,14 @@ nav a:hover {
   border-top: 2px solid #0065fc;
   padding: 28px 0;
 }
-#nav-link {
+#nav-inscrire {
   color: #0065fc;
 }
-
+/* decallage vers le bas ancres */
+section:target {
+  padding-top: 5em;
+  margin-top: -5em;
+}
 /*titre et barre de recherche*/
 .form-group {
   display: flex;
@@ -72,7 +77,8 @@ input {
   font-weight: 800;
   font-size: medium;
 }
-.button-find {
+.button-search-text {
+  cursor: pointer;
   border-radius: 0px 10px 10px 0px;
   border: 0;
   width: 125px;
@@ -80,6 +86,23 @@ input {
   color: white;
   font-weight: 700;
   font-size: medium;
+}
+.button-search-icon {
+  display: none;
+  cursor: pointer;
+  border-radius: 15px 15px 15px 15px;
+  background-color: white;
+
+  border: 0;
+  font-size: large;
+}
+.button-search-icon i {
+  display: none;
+  background-color: #0065fc;
+  border-radius: 15px 15px 15px 15px;
+  color: white;
+  width: 18px;
+  align-items: center;
 }
 
 /*filtres*/
@@ -354,7 +377,6 @@ footer ul {
 }
 /* Smartphone jusqu'a 425px de large*/
 @media (max-width: 425px) {
-  header,
   .container,
   .section-filters,
   .filters,
@@ -364,24 +386,76 @@ footer ul {
   .box-hebergements,
   .box-populaires,
   .vignettes-populaires,
-  .box-activites, 
-  footer{
+  .box-activites,
+  footer {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    text-align: start;
+    align-items: center;
+    text-align: center;
     width: 100%;
-    padding: 0px;
-    margin:0;
-    grid-gap:5px;
-    height:auto;
-
-
+    padding: 0;
+    margin: 0;
+    grid-gap: 0;
   }
-header .logo{
-  position: ;
+  h1,
+  h2,
+  h3 {
+    font-weight: 700;
+  }
+  P {
+    font-size: medium;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0%;
+    align-items: center;
+    justify-items: center;
+    border-bottom-style: solid;
+    border-top: 2px;
+    border-color: #f2f2f2;
+  }
+  .button-search-text {
+    display: none;
+  }
+  .button-search-icon,
+  .button-search-icon i {
+    display: block;
+  }
+  ul,
+  nav {
+    display: contents;
+  }
+  ul li {
+    padding: 0;
+  }
+  .nav-responsive-hebergements {
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-responsive-activites {
+    order: 4;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-responsive-inscrire {
+    order: 2;
+  }
+  nav a:hover {
+    display: none;
+  }
+  .header {
+  }
+  .nav-responsive-hebergements #nav-hebergements:hover,
+  .nav-responsive-activites #nav-activites:hover {
+    display: block;
+    border-bottom-style: solid;
+    border-top-style: none;
+    padding-bottom: 15px;
+  }
 }
-
 /* Tablette de 426px à 767px de large */
 @media (min-width: 426px) and (max-width: 767px) {
   .container {
