@@ -375,8 +375,8 @@ footer ul {
   text-decoration: none;
   text-align: left;
 }
-/* Smartphone jusqu'a 425px de large*/
-@media (max-width: 425px) {
+/* Smartphone jusqu'a 767px de large*/
+@media screen and (max-width: 767px) {
   .container,
   .section-filters,
   .filters,
@@ -384,8 +384,7 @@ footer ul {
   .search,
   .box-hebergements-populaires,
   .box-hebergements,
-  .box-populaires,
-  footer {
+  .box-populaires {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -448,8 +447,7 @@ footer ul {
     margin-right: 25px;
   }
   section:target {
-    padding-top: 8em;
-    margin-top: -5em;
+    padding-top: 9em;
   }
   nav a:hover {
     display: none;
@@ -459,7 +457,6 @@ footer ul {
     display: block;
     border-bottom-style: solid;
     border-top-style: none;
-    padding-bottom: 25px;
   }
   .filters {
     align-items: stretch;
@@ -498,9 +495,15 @@ footer ul {
     align-items: center;
     padding-bottom: 30px;
   }
+  footer {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 1rem 0.5rem;
+  }
 }
-/* Tablette de 426px à 767px de large */
-@media (min-width: 426px) and (max-width: 767px) {
+/* Tablette de 767px a 1024px de large */
+@media screen and (max-width: 1024px) {
   .container {
   }
 }
