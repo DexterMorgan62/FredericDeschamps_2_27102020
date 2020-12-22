@@ -385,7 +385,6 @@ footer ul {
   .box-hebergements-populaires,
   .box-hebergements,
   .box-populaires,
-  .vignettes-populaires,
   footer {
     display: flex;
     flex-direction: column;
@@ -412,7 +411,6 @@ footer ul {
     align-items: center;
     justify-items: center;
     border-bottom-style: solid;
-    border-top: 2px;
     border-color: #f2f2f2;
   }
   .button-search-text {
@@ -449,6 +447,10 @@ footer ul {
     text-align: right;
     margin-right: 25px;
   }
+  section:target {
+    padding-top: 8em;
+    margin-top: -5em;
+  }
   nav a:hover {
     display: none;
   }
@@ -457,12 +459,10 @@ footer ul {
     display: block;
     border-bottom-style: solid;
     border-top-style: none;
-    padding-bottom: 0px;
+    padding-bottom: 25px;
   }
   .filters {
     align-items: stretch;
-  }
-  .section-filters {
   }
   .button-filter {
     text-align: start;
@@ -471,6 +471,26 @@ footer ul {
   .box-hebergements-populaires {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .box-title-populaires {
+    padding: 10px;
+  }
+  .vignettes-populaires {
+    margin-bottom: 5px;
+  }
+  .vignettes-populaires-gauche {
+    height: 120px;
+  }
+  .block-populaires-details {
+    margin-right: 5px;
+    margin-left: 15px;
+  }
+  .populaires-name,
+  .populaires-prix {
+    font-size: 14px;
+  }
+  .box-title-hebergements {
+    padding: 10px;
   }
   .box-activites {
     display: flex;
