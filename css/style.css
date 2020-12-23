@@ -388,8 +388,9 @@ footer ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
+    padding: 0.5rem;
     text-align: start;
-    width: 100%;
     padding: 0;
     margin: 0;
     grid-gap: 0;
@@ -406,7 +407,7 @@ footer ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding: 0%;
+    padding: 0;
     align-items: center;
     justify-items: center;
     border-bottom-style: solid;
@@ -426,25 +427,24 @@ footer ul {
   ul li {
     padding: 0;
   }
-  .logo {
-    width: 100%;
-    margin-left: 25px;
+  .logo img {
+    width: auto;
+    justify-items: start;
   }
   .nav-responsive-hebergements {
     order: 3;
-    width: 100%;
+    width: auto;
     text-align: center;
   }
   .nav-responsive-activites {
     order: 4;
-    width: 100%;
+    width: auto;
     text-align: center;
   }
   .nav-responsive-inscrire {
     order: 2;
-    width: 100%;
+    width: auto;
     text-align: right;
-    margin-right: 25px;
   }
   section:target {
     padding-top: 9em;
@@ -470,7 +470,8 @@ footer ul {
     flex-direction: column-reverse;
   }
   .box-title-populaires {
-    padding: 10px;
+    padding: 0px;
+    border-radius: 0px;
   }
   .vignettes-populaires {
     margin-bottom: 5px;
@@ -488,6 +489,7 @@ footer ul {
   }
   .box-title-hebergements {
     padding: 10px;
+    background-color: transparent;
   }
   .box-activites {
     display: flex;
