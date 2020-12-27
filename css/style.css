@@ -206,9 +206,6 @@ input {
   margin-left: 10px;
 }
 .end-block {
-  position: absolute;
-  bottom: 30px;
-  margin-left: 20px;
   font-weight: 800;
 }
 
@@ -364,24 +361,25 @@ footer {
   display: flex;
   background-color: #f2f2f2;
   width: 100%;
-  grid-gap: 200px;
   bottom: 0;
-  justify-content: flex-start;
-  align-items: start;
+  justify-content: space-around;
 }
 footer ul {
   list-style: none;
   display: inline-block;
   text-decoration: none;
   text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.a-propos,
+.nos-hebergements,
+.assistance {
+  margin-bottom: 10px;
 }
 /* Smartphone jusqu'a 767px de large*/
 @media screen and (max-width: 767px) {
   .container,
-  .section-filters,
-  .filters,
-  .section-search,
-  .search,
   .box-hebergements-populaires,
   .box-hebergements,
   .box-populaires {
@@ -407,11 +405,14 @@ footer ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding: 0;
+    padding:0;
     align-items: center;
-    justify-items: center;
     border-bottom-style: solid;
     border-color: #f2f2f2;
+  }
+  .section-search {
+    padding: 10px;
+    text-align: center;
   }
   .button-search-text {
     display: none;
@@ -449,16 +450,25 @@ footer ul {
   section:target {
     padding-top: 9em;
   }
-  nav a:hover {
-    display: none;
-  }
   .nav-responsive-hebergements #nav-hebergements:hover,
   .nav-responsive-activites #nav-activites:hover {
     display: block;
     border-bottom-style: solid;
     border-top-style: none;
   }
+  .nav-responsive-inscrire #nav-inscrire:hover{
+    display: block;
+    border-bottom-style: solid;
+    border-top-style: none;
+  }
   .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 0.5rem;
+    text-align: start;
+    margin: 0;
     align-items: stretch;
   }
   .button-filter {
@@ -470,11 +480,11 @@ footer ul {
     flex-direction: column-reverse;
   }
   .box-title-populaires {
-    padding: 0px;
+    padding: 10px;
     border-radius: 0px;
   }
   .vignettes-populaires {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .vignettes-populaires-gauche {
     height: 120px;
@@ -491,11 +501,16 @@ footer ul {
     padding: 10px;
     background-color: transparent;
   }
+  .vignettes-hebergements {
+    margin-bottom: 10px;
+  }
+  .box-title-activites {
+    padding: 10px;
+  }
   .box-activites {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 30px;
   }
   footer {
     display: block;
