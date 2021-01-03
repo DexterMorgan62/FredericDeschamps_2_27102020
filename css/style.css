@@ -405,7 +405,8 @@ footer ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding:0;
+    padding: 0;
+    margin: 0;
     align-items: center;
     border-bottom-style: solid;
     border-color: #f2f2f2;
@@ -426,11 +427,10 @@ footer ul {
     display: contents;
   }
   ul li {
-    padding: 0;
+    padding: 20px;
   }
   .logo img {
-    width: auto;
-    justify-items: start;
+  margin-left: 10px;
   }
   .nav-responsive-hebergements {
     order: 3;
@@ -448,17 +448,15 @@ footer ul {
     text-align: right;
   }
   section:target {
-    padding-top: 9em;
+    padding-top: 7em;
   }
-  .nav-responsive-hebergements #nav-hebergements:hover,
-  .nav-responsive-activites #nav-activites:hover {
-    display: block;
-    border-bottom-style: solid;
-    border-top-style: none;
+  nav a:hover {
+    border-top: none;
+    padding: 0;
   }
-  .nav-responsive-inscrire #nav-inscrire:hover{
-    display: block;
-    border-bottom-style: solid;
+  .nav-responsive-hebergements:hover,
+  .nav-responsive-activites:hover {
+    border-bottom:  2px solid #0065fc;
     border-top-style: none;
   }
   .filters {
