@@ -107,7 +107,7 @@ input {
 
 /*filtres*/
 
-.filters {
+.section-filters {
   display: flex;
   width: 100%;
   align-items: center;
@@ -543,6 +543,35 @@ footer ul {
 }
 /* Tablette de 767px a 1024px de large */
 @media screen and (max-width: 1024px) {
-  .container {
+  .section-search {
+    text-align: center;
+  }
+  .form-group {
+    justify-content: center;
+  }
+  .section-filters {
+    display: block;
+    align-items: start;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    padding: 0.5rem;
+    margin: 0;
+  }
+  .button-filter {
+    text-align: start;
+    margin: 5px;
+    font-size: medium;
+  }
+  .box-hebergements-populaires {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .box-title-populaires{
+    margin-bottom: 20px;
   }
 }
