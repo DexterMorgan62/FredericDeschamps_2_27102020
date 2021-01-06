@@ -572,4 +572,86 @@ footer ul {
   .box-title-populaires {
     margin-bottom: 20px;
   }
+  .box-populaires{
+    grid-gap: 30px;
+  }
+  .vignettes-populaires {
+    grid-template-columns: 60% 40%;
+  }
+  .vignettes-populaires-gauche{
+    height: 230px;
+  }
+  .populaires-text, .populaires-star-rating{
+    text-align: center;
+  }
+  .box-hebergements {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 0;
+  }
+  .box-activites {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 28vw);
+    grid-gap: 30px;
+  }
+  .vignettes-activites-vieuxport {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 8px 12px #aaa;
+    overflow: hidden;
+  }
+  .vignettes-activites-fortdepomegues {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 8px 12px #aaa;
+    overflow: hidden;
+  }
+  .vignettes-activites-ilesdufrioul {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    flex-direction: column;
+    position: relative;
+    align-self: flex-end;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 8px 12px #aaa;
+    overflow: hidden;
+  }
+  .vignettes-activites-parcnationaldescalanques {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 8px 12px #aaa;
+    overflow: hidden;
+  }
+  .vignettes-activites-notredamedelagarde {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: flex-start;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 8px 12px #aaa;
+    overflow: hidden;
+  }
+  .vignettes-activites-parclongchamp {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 8px 12px #aaa;
+    overflow: hidden;
+  }
 }
